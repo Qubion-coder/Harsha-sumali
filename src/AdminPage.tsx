@@ -11,15 +11,24 @@ export default function AdminPage() {
   } | null>(null);
   const [copiedType, setCopiedType] = useState<'link' | 'message' | null>(null);
 
+  const generateDisplayName = (pfx: string, name: string) => {
+    const trimmed = name.trim();
+    if (!pfx) return trimmed;
+    if (pfx === 'Family') return `${trimmed} and Family`;
+    if (pfx === 'Dear') return trimmed;
+    return `${pfx} ${trimmed}`;
+  };
+
   const generateMessage = (pfx: string, name: string, url: string) => {
-    const fullName = pfx ? `${pfx} ${name}` : name;
-    return `Dear ${fullName} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${url}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Dilshan & Madushika`;
+    const displayName = generateDisplayName(pfx, name);
+    return `Dear ${displayName} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${url}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Harsha & Sumali`;
   };
 
   const handleGenerate = () => {
     if (!guestName.trim()) return;
     const trimmed = guestName.trim();
-    const url = `${window.location.origin}/?prefix=${encodeURIComponent(prefix)}&guest=${encodeURIComponent(trimmed)}`;
+    const displayName = generateDisplayName(prefix, trimmed);
+    const url = `${window.location.origin}/${encodeURIComponent(displayName)}`;
     const message = generateMessage(prefix, trimmed, url);
     setGenerated({ url, message });
   };
@@ -85,6 +94,10 @@ export default function AdminPage() {
             <h2 className="serif text-2xl text-[#3D2B1F] uppercase tracking-widest font-bold mb-4 text-center">Invitation Message</h2>
             <div className="bg-[#FAF7F2] p-6 rounded-xl border border-zinc-200 mb-6 font-serif text-[#3D2B1F] whitespace-pre-wrap text-[15px] leading-relaxed">
               {generated.message}
+            </div>
+
+            <div className="w-full bg-zinc-50 border border-zinc-200 rounded-xl p-3 mb-6 flex items-center justify-between overflow-hidden">
+              <span className="text-zinc-600 text-sm truncate font-medium">{generated.url}</span>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full">

@@ -45,7 +45,10 @@ export default function ConfirmPage() {
       }
     }
 
-    if (prefixParam && (prefixParam.includes('&') || prefixParam.toLowerCase().includes('family'))) {
+    if (
+      (prefixParam && (prefixParam.includes('&') || prefixParam.toLowerCase().includes('family'))) ||
+      (guestParam && (guestParam.includes('&') || guestParam.toLowerCase().includes('family')))
+    ) {
       setGuestCount(2);
     }
 

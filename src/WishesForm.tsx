@@ -13,7 +13,13 @@ export default function WishesForm() {
   useEffect(() => {
     // Auto-detect name from URL
     const urlParams = new URLSearchParams(window.location.search);
-    const guestName = urlParams.get('guest');
+    let guestName = urlParams.get('guest');
+    if (!guestName && window.location.pathname.length > 1) {
+      const rawPath = decodeURIComponent(window.location.pathname.replace(/^\//, ''));
+      if (!rawPath.startsWith('admin') && !rawPath.startsWith('confirm')) {
+        guestName = rawPath;
+      }
+    }
     if (guestName) {
       setName(guestName);
     }
