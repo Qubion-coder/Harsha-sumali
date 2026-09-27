@@ -41,7 +41,7 @@ export default function StoryApp() {
   });
 
   useEffect(() => {
-    const weddingDate = new Date('2027-01-14T09:00:00').getTime();
+    const weddingDate = new Date('2026-11-01T09:00:00').getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -119,11 +119,11 @@ export default function StoryApp() {
               className="z-10 flex flex-col items-center gap-8"
             >
               <h1 className="text-center px-4 leading-[1.1] drop-shadow-sm">
-                <span className="serif italic text-6xl sm:text-[6.5rem] text-[#2C2C2C] font-medium">Dilshan</span>
+                <span className="serif italic text-6xl sm:text-[6.5rem] text-[#2C2C2C] font-medium">Harsha</span>
                 <br />
                 <span className="serif italic text-4xl sm:text-5xl text-[#8B7355] inline-block py-2">&amp;</span>
                 <br />
-                <span className="serif italic text-6xl sm:text-[6.5rem] text-[#2C2C2C] font-medium">Madushika</span>
+                <span className="serif italic text-6xl sm:text-[6.5rem] text-[#2C2C2C] font-medium">Sumali</span>
               </h1>
               <p className="text-sm uppercase tracking-[0.3em] text-[#2C2C2C] font-medium text-center">
                 Wedding Invitation
@@ -230,31 +230,31 @@ export default function StoryApp() {
                 </h1>
 
                 <div className="flex flex-col items-center w-full mb-8 sm:mb-10">
-                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#2C2C2C] font-bold mb-2">JANUARY</p>
+                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#2C2C2C] font-bold mb-2">NOVEMBER</p>
                   <div className="flex items-center justify-center w-full gap-4">
                     <div className="flex-1 text-right border-y border-[#2C2C2C]/30 py-2">
-                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#2C2C2C] font-bold">THURSDAY</p>
+                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#2C2C2C] font-bold">SUNDAY</p>
                     </div>
-                    <p className="serif text-[5.5rem] sm:text-[7rem] font-medium text-[#2C2C2C] leading-none px-1">14</p>
+                    <p className="serif text-[5.5rem] sm:text-[7rem] font-medium text-[#2C2C2C] leading-none px-1">01</p>
                     <div className="flex-1 text-left border-y border-[#2C2C2C]/30 py-2">
                       <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#2C2C2C] font-bold">AT 9:00 AM</p>
                     </div>
                   </div>
-                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#2C2C2C] font-bold mt-2">2027</p>
+                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#2C2C2C] font-bold mt-2">2026</p>
                 </div>
 
                 <a
-                  href="https://maps.app.goo.gl/j8uVk8kT1eucEFhf8"
+                  href="https://maps.app.goo.gl/YmrpkEzxa63mSUmq9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="space-y-2 mt-2 sm:mt-4 text-[#2C2C2C] hover:opacity-70 transition-opacity block"
                 >
                   <p className="text-[16px] sm:text-[18px] uppercase tracking-widest font-bold flex items-center justify-center gap-1.5">
                     <MapPin size={14} className="text-[#8B7355]" />
-                    CINNAMON LAKESIDE
+                    HEMALI RECEPTION HALL
                   </p>
-                  <p className="text-[14px] sm:text-[16px] uppercase tracking-[0.15em] font-medium">COLOMBO</p>
-                  <p className="text-[12px] sm:text-[14px] uppercase tracking-[0.15em] font-medium px-4">115 SIR CHITTAMPALAM A GARDINER MAWATHA, COLOMBO</p>
+                  <p className="text-[14px] sm:text-[16px] uppercase tracking-[0.15em] font-medium">MATARA</p>
+                  <p className="text-[12px] sm:text-[14px] uppercase tracking-[0.15em] font-medium px-4">WALGAMA, MATARA (GROUND FLOOR)</p>
                 </a>
 
                 <div className="mt-8 sm:mt-10">
@@ -295,7 +295,7 @@ export default function StoryApp() {
 
                   <div className="flex flex-col items-center w-full mb-8">
                     <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 mb-3 font-bold">Bride's Parents</p>
-                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. H.P Kamalsiri<br/>&amp; Mrs. K.A Rohini Padmalatha</p>
+                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. B.B.G Susantha Priyal<br/>&amp; Mrs. W. Nimela Saroojani</p>
                   </div>
 
                   {/* Elegant Divider */}
@@ -307,7 +307,7 @@ export default function StoryApp() {
 
                   <div className="flex flex-col items-center w-full">
                     <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 mb-3 font-bold">Groom's Parents</p>
-                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. G.K Jayantha Siriwardana<br/>&amp; Mrs. P. Krishanthi Pothupitiya</p>
+                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. N.W Nimal<br/>&amp; Mrs. H.G Chandrapali</p>
                   </div>
                 </div>
               </motion.div>
@@ -372,7 +372,67 @@ export default function StoryApp() {
 
 
 
+        {/* --- SCREEN 3: Our Story --- */}
+        <section className="snap-section relative z-10 overflow-hidden">
+          <SectionBackground />
+          <div className="absolute inset-0 overflow-visible flex flex-col items-center p-6 text-center">
+            <div className="w-full my-auto flex flex-col items-center justify-center py-6 h-full">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
+                className="bg-[#FAF7F2]/90 backdrop-blur-sm p-6 py-8 rounded-[2rem] border border-[#EAE1D3] w-full max-w-sm flex flex-col items-center shadow-xl relative overflow-y-auto no-scrollbar max-h-[85vh]"
+              >
+                <div className="flex items-center justify-center gap-3 w-1/3 mx-auto mb-4">
+                  <div className="h-px bg-[#C8B29E] flex-1"></div>
+                  <div className="w-1.5 h-1.5 rotate-45 bg-[#8B7355]"></div>
+                  <div className="h-px bg-[#C8B29E] flex-1"></div>
+                </div>
 
+                <h2 className="serif text-[20px] uppercase tracking-[0.25em] text-[#8B7355] font-semibold mb-1 mt-1">
+                  OUR STORY
+                </h2>
+                <h3 className="script text-[32px] text-[#C8B29E] mb-4">
+                  And so, our forever begins
+                </h3>
+
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-3">
+                  It was never just one moment. It was every smile, every conversation, every quiet understanding, and every little memory that brought us here.
+                </p>
+
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-3">
+                  Somewhere between chance and destiny, we found in each other a love that feels effortless, rare and beautifully certain.
+                </p>
+
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-3">
+                  A love that became friendship. A friendship that became home. And a home we now choose to build together.
+                </p>
+
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-3">
+                  Today, we turn the page to the most beautiful chapter of our story.
+                </p>
+
+                <p className="script text-[28px] text-[#8B7355] leading-[1.2] mb-3 px-4">
+                  Not simply a beginning, but a promise of forever.
+                </p>
+
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-4">
+                  With hearts filled with love, we invite you to share in the joy of the day we become one.
+                </p>
+
+                <div className="flex items-center justify-center gap-3 w-1/3 mx-auto mb-4">
+                  <div className="h-px bg-[#C8B29E] flex-1"></div>
+                  <div className="w-1.5 h-1.5 rotate-45 bg-[#8B7355]"></div>
+                  <div className="h-px bg-[#C8B29E] flex-1"></div>
+                </div>
+
+                <h3 className="script text-[40px] text-[#8B7355]">
+                  Sumali &amp; Harsha
+                </h3>
+              </motion.div>
+            </div>
+          </div>
+        </section>
 
         {/* --- SCREEN 4: Timeline --- */}
         <section className="snap-section relative z-10 overflow-hidden">
@@ -397,10 +457,11 @@ export default function StoryApp() {
                   <div className="absolute left-1/2 top-0 bottom-0 w-px bg-zinc-300 -translate-x-1/2" />
 
                   {([
-                    { time: "8:30 AM", title: "GUEST ARRIVAL" },
-                    { time: "9:15 AM", title: "PORUWA CEREMONY" },
+                    { time: "9:00 AM", title: "GUEST ARRIVAL" },
+                    { time: "9:22 AM", title: "PORUWA CEREMONY" },
+                    { time: "9:57 AM", title: "REGISTRATION" },
                     { time: "12:30 PM", title: "LUNCH BUFFET & RECEPTION" },
-                    { time: "4:00 PM", title: "GOING AWAY" },
+                    { time: "4:05 PM", title: "GOING AWAY" },
                   ] as { time: string; title: string; sub?: string }[]).map((item, idx) => (
                     <div key={idx} className="relative z-10 bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-white shadow-sm w-[85%] mx-auto">
                       <p className="text-[13px] font-bold text-[#8B7355] mb-1">{item.time}</p>
@@ -430,18 +491,18 @@ export default function StoryApp() {
                   <h2 className="serif text-4xl tracking-[0.2em] text-[#3D2B1F] font-medium uppercase mb-6">Details</h2>
 
                   <div className="w-full h-32 rounded-xl overflow-hidden mb-4 relative">
-                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=900&auto=format&fit=crop" className="w-full h-full object-cover" alt="Venue" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEZFu89Ko2WzKZi3znSomcD2kTRMXX3ThgBzb3R5ZQQwQ9jij8UFKoElbi&s=10" className="w-full h-full object-cover" alt="Venue" />
                   </div>
 
                   <div className="bg-[#EAE1D3] py-2 rounded-t-xl mb-1">
                     <p className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#8B7355]">Location</p>
                   </div>
                   <div className="bg-white py-4 rounded-b-xl shadow-sm border border-white mb-4 flex flex-col items-center">
-                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">Cinnamon Lakeside</p>
-                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mt-1">Colombo</p>
-                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-3 px-2 text-center">115 Sir Chittampalam A Gardiner Mawatha, Colombo</p>
+                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">Hemali Reception Hall</p>
+                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mt-1">Matara</p>
+                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-3 px-2 text-center">Walgama, Matara (Ground Floor)</p>
                     <a
-                      href="https://maps.app.goo.gl/j8uVk8kT1eucEFhf8"
+                      href="https://maps.app.goo.gl/YmrpkEzxa63mSUmq9"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 px-3 py-1.5 bg-[#EAE1D3] text-[#3D2B1F] rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-[#C8B29E] transition-colors"
@@ -449,6 +510,14 @@ export default function StoryApp() {
                       <MapPin size={10} />
                       Live Location
                     </a>
+                  </div>
+
+                  <div className="bg-[#EAE1D3] py-2 rounded-t-xl mb-1 mt-4">
+                    <p className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#8B7355]">Contact Numbers</p>
+                  </div>
+                  <div className="bg-white py-4 rounded-b-xl shadow-sm border border-white mb-4 flex flex-col items-center">
+                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F] mb-1">Sumali: 077 258 5286</p>
+                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">Harsha: 071 595 2772</p>
                   </div>
                 </div>
               </motion.div>
@@ -478,7 +547,7 @@ export default function StoryApp() {
                 </div>
 
                 <p className="serif text-[13px] sm:text-[15px] uppercase tracking-[0.15em] font-bold text-[#2C2C2C] mb-6">
-                  BY DECEMBER 14, 2026
+                  BY OCTOBER 15, 2026
                 </p>
 
                 <div className="w-full">
