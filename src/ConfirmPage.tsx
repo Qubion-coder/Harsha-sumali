@@ -29,7 +29,7 @@ export default function ConfirmPage() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [fullInviteUrl, setFullInviteUrl] = useState<string>("/");
 
-  const endpoint = "https://script.google.com/macros/s/AKfycbx7KfLqJ0YcdqvFD-igqNJc4f-NfWI-tdqb5acO1dt-fDDsdWb3rOYoxCNgWkKguz5mqw/exec";
+  const endpoint = "https://script.google.com/macros/s/AKfycbw5KuuJACRja_qKYt4IHkaf7g6oBUr_DPaxrfVy2PvUTS-dRnPcwjGhSTnVS41q24jJsA/exec";
 
   // Pre-fill name and guest count from URL query param
   useEffect(() => {
