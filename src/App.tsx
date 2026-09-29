@@ -18,6 +18,7 @@ import {
   VolumeX,
   Sparkles,
 } from "lucide-react";
+import { ArrivalIcon, PoruwaIcon, RegistrationIcon, ReceptionIcon, GoingAwayIcon } from "./TimelineIcons";
 
 // FlipCard Component with 3D Tilt Effect + Premium Mobile Tap Hint
 function FlipCard({
@@ -1376,48 +1377,32 @@ export default function App() {
                   <Clock size={24} className="text-sage mb-4 md:mb-6 opacity-70 md:w-8 md:h-8" />
                   <h4 className="serif text-3xl md:text-4xl text-sage mb-4 md:mb-8">Timeline</h4>
 
-                  <div className="w-full max-w-sm space-y-4 md:space-y-6 text-left">
-                    <div className="flex items-start gap-2 md:gap-4">
-                      <span className="serif text-sage font-bold text-[12px] md:text-lg w-12 md:w-20 text-right shrink-0 pt-1">8:30 AM</span>
-                      <div className="w-px h-full bg-sage/30 relative mt-2 -ml-[1px] md:-ml-2 shrink-0">
-                        <div className="absolute top-0 -left-[3px] w-2 h-2 rounded-full bg-sage" />
-                      </div>
-                      <div>
-                        <p className="text-[12px] md:text-sm font-bold uppercase tracking-wider">Guest Arrival</p>
-                      </div>
-                    </div>
+                  <div className="w-full max-w-sm relative">
+                    {/* Timeline line */}
+                    <div className="absolute left-[31.5px] top-6 bottom-6 w-[1px] bg-gradient-to-b from-transparent via-sage/40 to-transparent" />
 
-                    <div className="flex items-start gap-2 md:gap-4">
-                      <span className="serif text-sage font-bold text-[12px] md:text-lg w-12 md:w-20 text-right shrink-0 pt-1">9:15 AM</span>
-                      <div className="w-px h-full bg-sage/30 relative mt-2 -ml-[1px] md:-ml-2 shrink-0">
-                        <div className="absolute top-0 -left-[3px] w-2 h-2 rounded-full bg-sage" />
-                      </div>
-                      <div>
-                        <p className="text-[12px] md:text-sm font-bold uppercase tracking-wider">Poruwa Ceremony</p>
-                        <p className="serif text-[12px] md:text-sm italic text-zinc-500">Main Hall</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-2 md:gap-4">
-                      <span className="serif text-sage font-bold text-[12px] md:text-lg w-12 md:w-20 text-right shrink-0 pt-1">12:30 PM</span>
-                      <div className="w-px h-full bg-sage/30 relative mt-2 -ml-[1px] md:-ml-2 shrink-0">
-                        <div className="absolute top-0 -left-[3px] w-2 h-2 rounded-full bg-sage" />
-                      </div>
-                      <div>
-                        <p className="text-[12px] md:text-sm font-bold uppercase tracking-wider">Wedding Reception</p>
-                        <p className="serif text-[12px] md:text-sm italic text-zinc-500">Lunch Buffet</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-2 md:gap-4">
-                      <span className="serif text-sage font-bold text-[12px] md:text-lg w-12 md:w-20 text-right shrink-0 pt-1">4:00 PM</span>
-                      <div className="w-px h-full bg-sage/30 relative mt-2 -ml-[1px] md:-ml-2 shrink-0">
-                        <div className="absolute top-0 -left-[3px] w-2 h-2 rounded-full bg-sage" />
-                      </div>
-                      <div>
-                        <p className="text-[12px] md:text-sm font-bold uppercase tracking-wider">Going Away</p>
-                      </div>
-                    </div>
+                    {([
+                      { time: "9:00 AM", title: "GUEST ARRIVAL", image: "/icon/guest arrival.jpg" },
+                      { time: "9:22 AM", title: "PORUWA CEREMONY", image: "/icon/poruwa.jpg", sub: "Main Hall" },
+                      { time: "9:57 AM", title: "REGISTRATION", image: "/icon/registration.jpg" },
+                      { time: "12:30 PM", title: "WEDDING RECEPTION", image: "/icon/lunch.jpg", sub: "Lunch Buffet" },
+                      { time: "4:05 PM", title: "GOING AWAY", image: "/icon/going away.jpg" },
+                    ]).map((item, idx) => {
+                      return (
+                        <div key={idx} className="relative z-10 flex items-center gap-5 mb-6 md:mb-8 last:mb-0 w-full px-2">
+                          <div className="relative shrink-0">
+                            <div className="w-12 h-12 rounded-full bg-[#FAF7F2]/90 border border-sage/30 flex items-center justify-center shadow-md backdrop-blur-sm z-10 relative overflow-hidden p-1">
+                              <img src={item.image} alt={item.title} className="w-full h-full object-cover rounded-full" />
+                            </div>
+                          </div>
+                          <div className="flex-1 text-left pb-2 border-b border-sage/20 border-dashed last:border-0">
+                            <p className="text-[14px] md:text-[16px] font-bold text-sage mb-1 serif italic">{item.time}</p>
+                            <p className="text-[11px] md:text-[12px] uppercase tracking-[0.15em] text-zinc-800 font-bold">{item.title}</p>
+                            {item.sub && <p className="serif text-[11px] md:text-[12px] italic text-zinc-500 mt-1">{item.sub}</p>}
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               }

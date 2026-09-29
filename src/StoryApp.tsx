@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Clock, Volume2, VolumeX } from 'lucide-react';
+import { ArrivalIcon, PoruwaIcon, RegistrationIcon, ReceptionIcon, GoingAwayIcon } from './TimelineIcons';
 import RSVPForm from './RSVPForm'; // We'll extract RSVPForm
 import WishesForm from './WishesForm';
 
@@ -459,23 +460,30 @@ export default function StoryApp() {
                   Timeline
                 </h3>
 
-                <div className="flex flex-col gap-6 w-full relative">
+                <div className="flex flex-col w-full relative pt-2">
                   {/* Timeline line */}
-                  <div className="absolute left-1/2 top-0 bottom-0 w-px bg-zinc-300 -translate-x-1/2" />
+                  <div className="absolute left-[31.5px] top-6 bottom-6 w-[1px] bg-gradient-to-b from-transparent via-[#8B7355]/40 to-transparent" />
 
                   {([
-                    { time: "9:00 AM", title: "GUEST ARRIVAL" },
-                    { time: "9:22 AM", title: "PORUWA CEREMONY" },
-                    { time: "9:57 AM", title: "REGISTRATION" },
-                    { time: "12:30 PM", title: "LUNCH BUFFET & RECEPTION" },
-                    { time: "4:05 PM", title: "GOING AWAY" },
-                  ] as { time: string; title: string; sub?: string }[]).map((item, idx) => (
-                    <div key={idx} className="relative z-10 bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-white shadow-sm w-[85%] mx-auto">
-                      <p className="text-[13px] font-bold text-[#8B7355] mb-1">{item.time}</p>
-                      <p className="text-[12px] uppercase tracking-widest text-[#3D2B1F] font-semibold">{item.title}</p>
-                      {item.sub && <p className="serif text-[12px] italic text-zinc-500 mt-1">{item.sub}</p>}
+                    { time: "9:00 AM", title: "GUEST ARRIVAL", image: "/icon/guest arrival.jpg" },
+                    { time: "9:22 AM", title: "PORUWA CEREMONY", image: "/icon/poruwa.jpg" },
+                    { time: "9:57 AM", title: "REGISTRATION", image: "/icon/registration.jpg" },
+                    { time: "12:30 PM", title: "LUNCH BUFFET & RECEPTION", image: "/icon/lunch.jpg" },
+                    { time: "4:05 PM", title: "GOING AWAY", image: "/icon/going away.jpg" },
+                  ]).map((item, idx) => {
+                    return (
+                    <div key={idx} className="relative z-10 flex items-center gap-5 mb-8 last:mb-0 w-full px-2">
+                      <div className="relative shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-[#FAF7F2]/90 border border-[#8B7355]/30 flex items-center justify-center shadow-md backdrop-blur-sm z-10 relative overflow-hidden p-1">
+                          <img src={item.image} alt={item.title} className="w-full h-full object-cover rounded-full" />
+                        </div>
+                      </div>
+                      <div className="flex-1 text-left pb-2 border-b border-[#8B7355]/20 border-dashed last:border-0">
+                        <p className="text-[15px] font-bold text-[#8B7355] mb-1 serif italic">{item.time}</p>
+                        <p className="text-[11px] uppercase tracking-[0.15em] text-[#3D2B1F] font-bold">{item.title}</p>
+                      </div>
                     </div>
-                  ))}
+                  )})}
                 </div>
               </motion.div>
             </div>
