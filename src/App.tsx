@@ -17,8 +17,11 @@ import {
   Volume2,
   VolumeX,
   Sparkles,
+  Users,
+  PenTool,
+  Utensils,
+  Car,
 } from "lucide-react";
-import { ArrivalIcon, PoruwaIcon, RegistrationIcon, ReceptionIcon, GoingAwayIcon } from "./TimelineIcons";
 
 // FlipCard Component with 3D Tilt Effect + Premium Mobile Tap Hint
 function FlipCard({
@@ -1382,17 +1385,18 @@ export default function App() {
                     <div className="absolute left-[31.5px] top-6 bottom-6 w-[1px] bg-gradient-to-b from-transparent via-sage/40 to-transparent" />
 
                     {([
-                      { time: "9:00 AM", title: "GUEST ARRIVAL", image: "/icon/guest arrival.jpg" },
-                      { time: "9:22 AM", title: "PORUWA CEREMONY", image: "/icon/poruwa.jpg", sub: "Main Hall" },
-                      { time: "9:57 AM", title: "REGISTRATION", image: "/icon/registration.jpg" },
-                      { time: "12:30 PM", title: "WEDDING RECEPTION", image: "/icon/lunch.jpg", sub: "Lunch Buffet" },
-                      { time: "4:05 PM", title: "GOING AWAY", image: "/icon/going away.jpg" },
+                      { time: "9:00 AM", title: "GUEST ARRIVAL", icon: Users },
+                      { time: "9:22 AM", title: "PORUWA CEREMONY", icon: Flower2, sub: "Main Hall" },
+                      { time: "9:57 AM", title: "REGISTRATION", icon: PenTool },
+                      { time: "12:30 PM", title: "WEDDING RECEPTION", icon: Utensils, sub: "Lunch Buffet" },
+                      { time: "4:05 PM", title: "GOING AWAY", icon: Car },
                     ]).map((item, idx) => {
+                      const Icon = item.icon;
                       return (
                         <div key={idx} className="relative z-10 flex items-center gap-5 mb-6 md:mb-8 last:mb-0 w-full px-2">
                           <div className="relative shrink-0">
-                            <div className="w-12 h-12 rounded-full bg-[#FAF7F2]/90 border border-sage/30 flex items-center justify-center shadow-md backdrop-blur-sm z-10 relative overflow-hidden p-1">
-                              <img src={item.image} alt={item.title} className="w-full h-full object-cover rounded-full" />
+                            <div className="w-12 h-12 rounded-full bg-[#FAF7F2]/90 border border-sage/30 flex items-center justify-center shadow-md backdrop-blur-sm z-10 relative">
+                              <Icon size={20} className="text-sage" />
                             </div>
                           </div>
                           <div className="flex-1 text-left pb-2 border-b border-sage/20 border-dashed last:border-0">
