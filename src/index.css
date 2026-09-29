@@ -142,7 +142,34 @@ body {
 video::-webkit-media-controls {
   display: none !important;
 }
+
 video::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none;
+}
+
+/* Premium Gold Gradient */
+.gold-gradient-text {
+  background: linear-gradient(to right, #5C4033 0%, #8B6508 25%, #A0522D 50%, #8B6508 75%, #5C4033 100%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.gold-gradient-text-subtle {
+  background: linear-gradient(to right, #4A2E1B 0%, #8B6508 50%, #4A2E1B 100%);
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }

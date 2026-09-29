@@ -536,10 +536,10 @@ export default function App() {
               transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
               className="absolute top-12 md:top-24 left-0 right-0 text-center z-10 pointer-events-none"
             >
-              <h1 className="serif text-5xl md:text-7xl text-sage/80 font-light tracking-[0.2em] drop-shadow-xl">
+              <h1 className="serif text-5xl md:text-7xl gold-gradient-text font-light tracking-[0.2em] drop-shadow-xl">
                 Dilshan & Madushika
               </h1>
-              <p className="mt-3 text-[12px] md:text-sm uppercase tracking-[0.6em] text-sage/60 font-bold">
+              <p className="mt-3 text-[12px] md:text-sm uppercase tracking-[0.6em] text-[#B8860B] font-bold">
                 14 January 2027
               </p>
             </motion.div>
@@ -549,20 +549,20 @@ export default function App() {
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[150vw] md:w-[90vw] md:h-[90vw] rounded-full border-2 border-sage/10 border-dashed pointer-events-none z-0 opacity-50"
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[150vw] md:w-[90vw] md:h-[90vw] rounded-full border-2 border-[#B8860B]/20 border-dashed pointer-events-none z-0 opacity-50"
                 />
                 <motion.div
                   animate={{ rotate: -360 }}
                   transition={{ duration: 180, repeat: Infinity, ease: "linear" }}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[120vw] md:w-[70vw] md:h-[70vw] rounded-full border border-sage/10 pointer-events-none z-0 opacity-40 flex items-center justify-center p-8"
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[120vw] md:w-[70vw] md:h-[70vw] rounded-full border border-[#B8860B]/20 pointer-events-none z-0 opacity-40 flex items-center justify-center p-8"
                 >
-                  <div className="w-full h-full rounded-full border-[0.5px] border-sage/5" />
+                  <div className="w-full h-full rounded-full border-[0.5px] border-[#FFD700]/10" />
                 </motion.div>
 
                 <motion.div
                   animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute w-[80vw] md:w-[600px] h-[80vw] md:h-[600px] bg-sage/20 rounded-full blur-[80px] md:blur-[120px] pointer-events-none z-0"
+                  className="absolute w-[80vw] md:w-[600px] h-[80vw] md:h-[600px] bg-[#B8860B]/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none z-0"
                 />
               </>
             )}
@@ -834,35 +834,35 @@ export default function App() {
           </motion.div>
 
           <h1 className="flex flex-col items-center px-2">
-            <span className="serif italic text-4xl sm:text-6xl md:text-[8rem] text-sage font-light leading-tight drop-shadow-sm mb-1 md:mb-6">
+            <span className="serif italic text-4xl sm:text-6xl md:text-[8rem] gold-gradient-text font-light leading-tight drop-shadow-sm mb-1 md:mb-6">
               You're Invited!
             </span>
-            <span className="serif text-base sm:text-lg md:text-5xl text-sage/40 tracking-[0.15em] md:tracking-[0.3em] uppercase font-light">
+            <span className="serif text-base sm:text-lg md:text-5xl text-[#8B6508] tracking-[0.15em] md:tracking-[0.3em] uppercase font-light">
               to the wedding of
             </span>
           </h1>
 
           <div className="flex flex-row items-center justify-center gap-2 sm:gap-4 md:gap-16 mt-4 md:mt-8 relative w-full px-2">
-            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-sage/5 blur-3xl rounded-full" />
+            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-[#FFD700]/10 blur-3xl rounded-full" />
 
-            <motion.h2 whileHover={{ scale: 1.05 }} className="script text-[9vw] sm:text-5xl md:text-7xl text-sage drop-shadow-lg relative z-10 leading-none">
+            <motion.h2 whileHover={{ scale: 1.05 }} className="script text-[9vw] sm:text-5xl md:text-7xl gold-gradient-text drop-shadow-lg relative z-10 leading-none">
               Madushika
             </motion.h2>
 
             <div className="relative flex items-center justify-center shrink-0">
-              <div className="h-px w-6 md:w-24 bg-sage/20 hidden md:block" />
+              <div className="h-px w-6 md:w-24 bg-[#B8860B]/40 hidden md:block" />
               <div className="relative mx-1 md:mx-4">
-                <Heart className="text-sage/40 w-5 h-5 sm:w-7 sm:h-7 md:w-10 md:h-10 animate-pulse" fill="currentColor" />
+                <Heart className="text-[#B8860B]/60 w-5 h-5 sm:w-7 sm:h-7 md:w-10 md:h-10 animate-pulse" fill="currentColor" />
                 <motion.div
                   animate={{ scale: [1, 1.5, 1], opacity: [0, 1, 0] }}
                   transition={{ repeat: Infinity, duration: 2 }}
-                  className="absolute inset-0 bg-sage/20 blur-xl rounded-full"
+                  className="absolute inset-0 bg-[#FFD700]/20 blur-xl rounded-full"
                 />
               </div>
-              <div className="h-px w-6 md:w-24 bg-sage/20 hidden md:block" />
+              <div className="h-px w-6 md:w-24 bg-[#B8860B]/40 hidden md:block" />
             </div>
 
-            <motion.h2 whileHover={{ scale: 1.05 }} className="script text-[9vw] sm:text-5xl md:text-7xl text-sage drop-shadow-lg relative z-10 leading-none">
+            <motion.h2 whileHover={{ scale: 1.05 }} className="script text-[9vw] sm:text-5xl md:text-7xl gold-gradient-text drop-shadow-lg relative z-10 leading-none">
               Dilshan
             </motion.h2>
           </div>
