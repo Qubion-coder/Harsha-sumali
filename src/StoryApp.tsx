@@ -210,54 +210,54 @@ export default function StoryApp() {
                     transition={{ delay: 0.8, duration: 1 }}
                     className="mb-6 flex flex-col items-center"
                   >
-                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-bold text-[#4A2E1B] mb-4">
+                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-bold text-[#B8860B] mb-4">
                       WE CORDIALLY INVITE
                     </p>
-                    <p className="script text-2xl sm:text-4xl gold-gradient-text drop-shadow-[0_4px_6px_rgba(0,0,0,0.6)] mb-4 text-center px-4">
+                    <p className="script text-2xl sm:text-4xl gold-gradient-text drop-shadow-sm mb-4 text-center px-4">
                       {guestPrefix ? `${guestPrefix} ${guestName}` : guestName}
                     </p>
-                    <div className="h-px w-16 bg-[#4A2E1B]/50 mb-6"></div>
-                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#3D2B1F] mb-2 sm:mb-4">
+                    <div className="h-px w-16 bg-[#B8860B]/50 mb-6"></div>
+                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#8B6508] mb-2 sm:mb-4">
                       TO CELEBRATE OUR
                     </p>
                   </motion.div>
                 ) : (
                   <>
-                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#3D2B1F] mb-1">
+                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#8B6508] mb-1">
                       INVITE YOU TO CELEBRATE
                     </p>
-                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#3D2B1F] mb-2 sm:mb-4">
+                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#8B6508] mb-2 sm:mb-4">
                       OUR
                     </p>
                   </>
                 )}
 
-                <h1 className="script text-6xl sm:text-[7rem] gold-gradient-text mb-8 sm:mb-12 drop-shadow-[0_4px_6px_rgba(0,0,0,0.6)] font-normal">
+                <h1 className="script text-6xl sm:text-[7rem] gold-gradient-text mb-8 sm:mb-12 drop-shadow-lg font-normal">
                   Wedding
                 </h1>
 
                 <div className="flex flex-col items-center w-full mb-8 sm:mb-10">
-                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#4A2E1B] font-bold mb-2">NOVEMBER</p>
+                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#B8860B] font-bold mb-2">NOVEMBER</p>
                   <div className="flex items-center justify-center w-full gap-4">
-                    <div className="flex-1 text-right border-y border-[#4A2E1B]/40 py-2">
-                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#3D2B1F] font-bold">SUNDAY</p>
+                    <div className="flex-1 text-right border-y border-[#B8860B]/40 py-2">
+                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#8B6508] font-bold">SUNDAY</p>
                     </div>
-                    <p className="serif text-[5.5rem] sm:text-[7rem] font-medium text-[#4A2E1B] leading-none px-1">01</p>
-                    <div className="flex-1 text-left border-y border-[#4A2E1B]/40 py-2">
-                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#3D2B1F] font-bold">AT 9:00 AM</p>
+                    <p className="serif text-[5.5rem] sm:text-[7rem] font-medium text-[#B8860B] leading-none px-1">01</p>
+                    <div className="flex-1 text-left border-y border-[#B8860B]/40 py-2">
+                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#8B6508] font-bold">AT 9:00 AM</p>
                     </div>
                   </div>
-                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#4A2E1B] font-bold mt-2">2026</p>
+                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#B8860B] font-bold mt-2">2026</p>
                 </div>
 
                 <a
                   href="https://maps.app.goo.gl/YmrpkEzxa63mSUmq9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="space-y-2 mt-2 sm:mt-4 text-[#3D2B1F] hover:opacity-70 transition-opacity block"
+                  className="space-y-2 mt-2 sm:mt-4 text-[#8B6508] hover:opacity-70 transition-opacity block"
                 >
                   <p className="text-[16px] sm:text-[18px] uppercase tracking-widest font-bold flex items-center justify-center gap-1.5">
-                    <MapPin size={14} className="text-[#8B6508]" />
+                    <MapPin size={14} className="text-[#FFD700]" />
                     HEMALIE RECEPTION HALL
                   </p>
                   <p className="text-[14px] sm:text-[16px] uppercase tracking-[0.15em] font-medium">MATARA</p>
@@ -265,11 +265,11 @@ export default function StoryApp() {
                 </a>
 
                 <div className="mt-8 sm:mt-10">
-                  <p className="text-[12px] sm:text-sm uppercase tracking-[0.15em] font-bold text-[#4A2E1B]">RECEPTION TO FOLLOW</p>
+                  <p className="text-[12px] sm:text-sm uppercase tracking-[0.15em] font-bold text-[#B8860B]">RECEPTION TO FOLLOW</p>
                 </div>
 
                 <div className="mt-4 sm:mt-6 flex justify-center">
-                  <svg className="w-10 h-10 text-[#4A2E1B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-10 h-10 text-[#B8860B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M15 12c-1.5-1-2-2-2-4v-4l6-2v6c0 2-.5 3-2 4M9 12c1.5-1 2-2 2-4v-4l-6-2v6c0 2 .5 3 2 4M13 12v8M11 12v8M9 20h6" />
                     <circle cx="15.5" cy="5.5" r="0.5" fill="currentColor" />
                     <circle cx="14" cy="7.5" r="0.5" fill="currentColor" />

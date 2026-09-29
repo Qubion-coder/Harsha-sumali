@@ -150,18 +150,17 @@ video::-webkit-media-controls-start-playback-button {
 
 /* Premium Gold Gradient */
 .gold-gradient-text {
-  background: linear-gradient(to right, #5C4033 0%, #8B6508 25%, #A0522D 50%, #8B6508 75%, #5C4033 100%);
+  background: linear-gradient(to right, #B8860B 0%, #FFD700 25%, #FFF8DC 50%, #FFD700 75%, #B8860B 100%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 5s linear infinite;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
 .gold-gradient-text-subtle {
-  background: linear-gradient(to right, #4A2E1B 0%, #8B6508 50%, #4A2E1B 100%);
+  background: linear-gradient(to right, #8B6508 0%, #D4AF37 50%, #8B6508 100%);
   color: #000;
   background-clip: text;
   -webkit-background-clip: text;
