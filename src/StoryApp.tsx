@@ -258,7 +258,7 @@ export default function StoryApp() {
                 >
                   <p className="text-[16px] sm:text-[18px] uppercase tracking-widest font-bold flex items-center justify-center gap-1.5">
                     <MapPin size={14} className="text-[#8B7355]" />
-                    HEMALI RECEPTION HALL
+                    HEMALIE RECEPTION HALL
                   </p>
                   <p className="text-[14px] sm:text-[16px] uppercase tracking-[0.15em] font-medium">MATARA</p>
                   <p className="text-[12px] sm:text-[14px] uppercase tracking-[0.15em] font-medium px-4">WALGAMA, MATARA (GROUND FLOOR)</p>
@@ -498,14 +498,14 @@ export default function StoryApp() {
                   <h2 className="serif text-4xl tracking-[0.2em] text-[#3D2B1F] font-medium uppercase mb-6">Details</h2>
 
                   <div className="w-full h-32 rounded-xl overflow-hidden mb-4 relative">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEZFu89Ko2WzKZi3znSomcD2kTRMXX3ThgBzb3R5ZQQwQ9jij8UFKoElbi&s=10" className="w-full h-full object-cover" alt="Venue" />
+                    <img src="/WhatsApp Image 2026-09-29 at 17.17.02.jpeg" className="w-full h-full object-cover" alt="Hemalie Reception Hall" />
                   </div>
 
                   <div className="bg-[#EAE1D3] py-2 rounded-t-xl mb-1">
                     <p className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#8B7355]">Location</p>
                   </div>
                   <div className="bg-white py-4 rounded-b-xl shadow-sm border border-white mb-4 flex flex-col items-center">
-                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">Hemali Reception Hall</p>
+                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">Hemalie Reception Hall</p>
                     <p className="text-[10px] uppercase tracking-widest text-zinc-500 mt-1">Matara</p>
                     <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-3 px-2 text-center">Walgama, Matara (Ground Floor)</p>
                     <a

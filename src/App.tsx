@@ -1081,7 +1081,7 @@ export default function App() {
                           9:00 AM · 2027
                         </span>
                         <span className="mt-1 block max-w-[200px] px-2 text-[9px] sm:text-[9px] md:text-[10px] uppercase tracking-[0.12em] text-taupe/75 text-center leading-snug break-words">
-                          CINNAMON LAKESIDE, COLOMBO
+                          HEMALIE, COLOMBO
                         </span>
                       </div>
                       <div className="h-px flex-1 bg-sand/45" />
@@ -1279,7 +1279,7 @@ export default function App() {
                 <div className="w-full h-full relative group">
                   <img
                     src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2098&auto=format&fit=crop"
-                    alt="Cinnamon Lakeside Colombo"
+                    alt="Hemalie Colombo"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
@@ -1290,7 +1290,7 @@ export default function App() {
                       The Location
                     </p>
                     <h3 className="serif text-3xl md:text-6xl text-sage leading-tight drop-shadow-sm font-medium">
-                      Cinnamon Lakeside
+                      Hemalie
                       <br />
                       Colombo
                     </h3>
@@ -1308,16 +1308,16 @@ export default function App() {
 
                   <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-sage flex items-center gap-3 bg-white/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/60 shadow-lg">
                     <MapPin className="text-sage animate-bounce" size={16} />
-                    <p className="serif text-[12px] md:text-base tracking-[0.2em] font-bold uppercase">Cinnamon Lakeside</p>
+                    <p className="serif text-[12px] md:text-base tracking-[0.2em] font-bold uppercase">Hemalie</p>
                   </div>
                 </div>
               }
               back={
                 <>
                   <MapPin size={24} className="text-sage mb-4 md:mb-6 opacity-70 md:w-9 md:h-9" />
-                  <h4 className="serif text-3xl md:text-5xl text-sage mb-2 md:mb-4">Cinnamon Lakeside Colombo</h4>
+                  <h4 className="serif text-3xl md:text-5xl text-sage mb-2 md:mb-4">Hemalie Colombo</h4>
                   <p className="text-[12px] md:text-base text-zinc-500 uppercase tracking-widest leading-loose mb-4 md:mb-6">
-                    Cinnamon Lakeside
+                    Hemalie
                     <br />
                     Colombo
                   </p>
