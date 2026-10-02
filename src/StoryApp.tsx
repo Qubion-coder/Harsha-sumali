@@ -242,7 +242,7 @@ export default function StoryApp() {
                     <div className="flex-1 text-right border-y border-[#B8860B]/40 py-2">
                       <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#8B6508] font-bold">SUNDAY</p>
                     </div>
-                    <p className="serif text-[5.5rem] sm:text-[7rem] font-medium text-[#B8860B] leading-none px-1">01</p>
+                    <p className="script text-[5.5rem] sm:text-[7rem] font-medium text-[#B8860B] leading-none px-1">01</p>
                     <div className="flex-1 text-left border-y border-[#B8860B]/40 py-2">
                       <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#8B6508] font-bold">AT 9:00 AM</p>
                     </div>
